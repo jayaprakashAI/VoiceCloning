@@ -237,8 +237,6 @@ with gr.Blocks(analytics_enabled=False) as demo:
                 gr.Markdown(markdown_table_v2)
             with gr.Row():
                 gr.Markdown(description)
-        with gr.Column():
-            gr.Video('https://github.com/myshell-ai/OpenVoice/assets/40556743/3cba936f-82bf-476c-9e52-09f0f417bb2f', autoplay=True)
             
     with gr.Row():
         gr.HTML(wrapped_markdown_content)
