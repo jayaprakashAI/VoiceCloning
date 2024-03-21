@@ -147,7 +147,7 @@ def predict(prompt, style, audio_file_pth, mic_file_path, use_mic, agree):
 
     save_path = f'{output_dir}/output.wav'
     # Run the tone color converter
-    encode_message = "@MyShell"
+    encode_message = "@AI"
     tone_color_converter.convert(
         audio_src_path=src_path, 
         src_se=source_se, 
@@ -165,10 +165,10 @@ def predict(prompt, style, audio_file_pth, mic_file_path, use_mic, agree):
 
 
 
-title = "MyShell OpenVoice"
+title = "Voice CLoning"
 
 description = """
-We introduce OpenVoice, a versatile instant voice cloning approach that requires only a short audio clip from the reference speaker to replicate their voice and generate speech in multiple languages. OpenVoice enables granular control over voice styles, including emotion, accent, rhythm, pauses, and intonation, in addition to replicating the tone color of the reference speaker. OpenVoice also achieves zero-shot cross-lingual voice cloning for languages not included in the massive-speaker training set.
+We introduce VoiceCloning, a versatile instant voice cloning approach that requires only a short audio clip from the reference speaker to replicate their voice and generate speech in multiple languages. VoiceCloning enables granular control over voice styles, including emotion, accent, rhythm, pauses, and intonation, in addition to replicating the tone color of the reference speaker. OpenVoice also achieves zero-shot cross-lingual voice cloning for languages not included in the massive-speaker training set.
 """
 
 markdown_table = """
@@ -177,7 +177,7 @@ markdown_table = """
 |               |               |               |
 | :-----------: | :-----------: | :-----------: | 
 | **OpenSource Repo** | **Project Page** | **Join the Community** |        
-| <div style='text-align: center;'><a style="display:inline-block,align:center" href='https://github.com/myshell-ai/OpenVoice'><img src='https://img.shields.io/github/stars/myshell-ai/OpenVoice?style=social' /></a></div> | [OpenVoice](https://research.myshell.ai/open-voice) | [![Discord](https://img.shields.io/discord/1122227993805336617?color=%239B59B6&label=%20Discord%20)](https://discord.gg/myshell) |
+| <div style='text-align: center;'><a style="display:inline-block,align:center" href='https://github.com/jayaprakashAI/VoiceCloning'>
 
 </div>
 """
@@ -187,7 +187,7 @@ markdown_table_v2 = """
 
 |               |               |               |              |
 | :-----------: | :-----------: | :-----------: | :-----------: | 
-| **OpenSource Repo** | <div style='text-align: center;'><a style="display:inline-block,align:center" href='https://github.com/myshell-ai/OpenVoice'><img src='https://img.shields.io/github/stars/myshell-ai/OpenVoice?style=social' /></a></div> |  **Project Page** |  [OpenVoice](https://research.myshell.ai/open-voice) |     
+| **OpenSource Repo** | <div style='text-align: center;'><a style="display:inline-block,align:center" href='https://github.com/jayaprakashAI/VoiceCloning'>    
 
 | | |
 | :-----------: | :-----------: |
@@ -197,8 +197,8 @@ markdown_table_v2 = """
 """
 content = """
 <div>
-  <strong>For multi-lingual & cross-lingual examples, please refer to <a href='https://github.com/myshell-ai/OpenVoice/blob/main/demo_part2.ipynb'>this jupyter notebook</a>.</strong>
-  This online demo mainly supports <strong>English</strong>. The <em>default</em> style also supports <strong>Chinese</strong>. But OpenVoice can adapt to any other language as long as a base speaker is provided.
+  <strong>For multi-lingual & cross-lingual examples, please refer to <a href='https://github.com/jayaprakashAI/VoiceCloning/blob/main/demo_part2.ipynb'>this jupyter notebook</a>.</strong>
+  This online demo mainly supports <strong>English</strong>. The <em>default</em> style also supports <strong></strong>. But OpenVoice can adapt to any other language as long as a base speaker is provided.
 </div>
 """
 wrapped_markdown_content = f"<div style='border: 1px solid #000; padding: 10px;'>{content}</div>"
@@ -250,7 +250,7 @@ with gr.Blocks(analytics_enabled=False) as demo:
             )
             style_gr = gr.Dropdown(
                 label="Style",
-                info="Select a style of output audio for the synthesised speech. (Chinese only support 'default' now)",
+                info="Select a style of output audio for the synthesised speech. ( 'default' )",
                 choices=['default', 'whispering', 'cheerful', 'terrified', 'angry', 'sad', 'friendly'],
                 max_choices=1,
                 value="default",
@@ -275,7 +275,7 @@ with gr.Blocks(analytics_enabled=False) as demo:
             tos_gr = gr.Checkbox(
                 label="Agree",
                 value=False,
-                info="I agree to the terms of the cc-by-nc-4.0 license-: https://github.com/myshell-ai/OpenVoice/blob/main/LICENSE",
+                info="I agree to the terms of the cc-by-nc-4.0 license-: https://github.com/jayaprakashAI/VoiceCloning/blob/main/",
             )
 
             tts_button = gr.Button("Send", elem_id="send-btn", visible=True)
