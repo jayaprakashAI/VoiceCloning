@@ -11,7 +11,7 @@ from mel_processing import spectrogram_torch
 from models import SynthesizerTrn
 
 
-class OpenVoiceBaseClass(object):
+class VoiceCloningBaseClass(object):
     def __init__(self, 
                 config_path, 
                 device='cuda:0'):
@@ -39,7 +39,7 @@ class OpenVoiceBaseClass(object):
         print('missing/unexpected keys:', a, b)
 
 
-class BaseSpeakerTTS(OpenVoiceBaseClass):
+class BaseSpeakerTTS(VoiceCloningBaseClass):
     language_marks = {
         "english": "EN",
         "chinese": "ZH",
@@ -98,7 +98,7 @@ class BaseSpeakerTTS(OpenVoiceBaseClass):
             soundfile.write(output_path, audio, self.hps.data.sampling_rate)
 
 
-class ToneColorConverter(OpenVoiceBaseClass):
+class ToneColorConverter(VoiceCloningBaseClass):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
