@@ -191,7 +191,6 @@ markdown_table_v2 = """
 
 | | |
 | :-----------: | :-----------: |
-#**Join the Community** |   [![Discord](https://img.shields.io/discord/1122227993805336617?color=%239B59B6&label=%20Discord%20)](https://discord.gg/myshell) |
 
 </div>
 """
