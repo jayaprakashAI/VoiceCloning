@@ -230,7 +230,7 @@ with gr.Blocks(analytics_enabled=False) as demo:
             with gr.Row():
                 gr.Markdown(
                     """
-                    ## <img src="https://huggingface.co/spaces/myshell-ai/OpenVoice/raw/main/logo.jpg" height="40"/>
+                    #<img src="https://huggingface.co/spaces/myshell-ai/OpenVoice/raw/main/logo.jpg" height="40"/>
                     """
                 )
             with gr.Row():    
