@@ -118,7 +118,7 @@ def predict(prompt, style, audio_file_pth, mic_file_path, use_mic, agree):
             None,
         )
     if len(prompt) > 200:
-        text_hint += f"[ERROR] Text length limited to 200 characters for this demo, please try shorter text. You can clone our open-source repo and try for your usage \n"
+        text_hint += f"[ERROR] Text length limited to 200 characters for this demo, please try shorter text. You can clone our  repo and try for your usage \n"
         gr.Warning(
             "Text length limited to 200 characters for this demo, please try shorter text. You can clone our open-source repo for your usage"
         )
@@ -187,11 +187,11 @@ markdown_table_v2 = """
 
 |               |               |               |              |
 | :-----------: | :-----------: | :-----------: | :-----------: | 
-| **OpenSource Repo** | <div style='text-align: center;'><a style="display:inline-block,align:center" href='https://github.com/jayaprakashAI/VoiceCloning'>    
+|  | <div style='text-align: center;'><a style="display:inline-block,align:center" href='https://github.com/jayaprakashAI/VoiceCloning'>    
 
 | | |
 | :-----------: | :-----------: |
-**Join the Community** |   [![Discord](https://img.shields.io/discord/1122227993805336617?color=%239B59B6&label=%20Discord%20)](https://discord.gg/myshell) |
+#**Join the Community** |   [![Discord](https://img.shields.io/discord/1122227993805336617?color=%239B59B6&label=%20Discord%20)](https://discord.gg/myshell) |
 
 </div>
 """
@@ -230,7 +230,7 @@ with gr.Blocks(analytics_enabled=False) as demo:
             with gr.Row():
                 gr.Markdown(
                     """
-                    #<img src="https://huggingface.co/spaces/myshell-ai/OpenVoice/raw/main/logo.jpg" height="40"/>
+                   
                     """
                 )
             with gr.Row():    
