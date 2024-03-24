@@ -189,8 +189,7 @@ markdown_table_v2 = """
 | :-----------: | :-----------: | :-----------: | :-----------: | 
 |  | <div style='text-align: center;'><a style="display:inline-block,align:center" href='https://github.com/jayaprakashAI/VoiceCloning'>    
 
-| | |
-| :-----------: | :-----------: |
+
 
 </div>
 """
