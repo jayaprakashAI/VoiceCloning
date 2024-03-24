@@ -173,9 +173,7 @@ We introduce VoiceCloning, a versatile instant voice cloning approach that requi
 
 markdown_table = """
 <div align="center" style="margin-bottom: 10px;">
-
-|               |               |               |
-| :-----------: | :-----------: | :-----------: | 
+ 
 | **OpenSource Repo** | **Project Page** | **Join the Community** |        
 | <div style='text-align: center;'><a style="display:inline-block,align:center" href='https://github.com/jayaprakashAI/VoiceCloning'>
 
@@ -185,8 +183,6 @@ markdown_table = """
 markdown_table_v2 = """
 <div align="center" style="margin-bottom: 2px;">
 
-|               |               |               |              |
-| :-----------: | :-----------: | :-----------: | :-----------: | 
 |  | <div style='text-align: center;'><a style="display:inline-block,align:center" href='https://github.com/jayaprakashAI/VoiceCloning'>    
 
 
